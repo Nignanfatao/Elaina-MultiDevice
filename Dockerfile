@@ -4,7 +4,7 @@ FROM node:18
 WORKDIR /usr/src/app
 
 # Copy package files and install dependencies
-COPY package.json package-lock.json ./
+COPY package.json 
 RUN npm ci
 
 # Install system dependencies
