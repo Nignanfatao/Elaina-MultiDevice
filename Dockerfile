@@ -7,7 +7,7 @@ RUN apt-get update && \
 
 RUN git clone https://github.com/Nignanfatao/Elaina-MultiDevice
 WORKDIR /usr/src/app
-COPY package.json 
+COPY package.json . 
 RUN npm i
 
 COPY . .
